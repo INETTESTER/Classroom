@@ -21,6 +21,7 @@ import { today } from '../api/today.js';
 import { student_today } from '../api/student_today.js';
 import { student_check } from '../api/student_check.js';
 import { user_check } from '../api/user_check.js';
+import { eligibility } from '../api/eligibility.js';
 
 //============================================================================
 
@@ -33,20 +34,21 @@ export default function () {    //เรียกใช้ API ใน export def
   // response = class_studentClassPage(scenario)       // 5
   // response = submissions(scenario)                  // 6
   // response = classwork_byClassId()           // 7
-  //response = classwork_calTeacher(scenario)          // 8
+  // response = classwork_calTeacher(scenario)          // 8
   // response = class_dashboard_teacher(scenario)       // 9
   // response = class_dashboard_student(scenario)       // 10
   // response = class_teacherClassPage()       // 11
   // response = classwork_grades()             // 12
 
   // ============== clockin =======================
-  response = me()                    // 1
+  //response = me()                    // 1
   //response = time()                  // 2
   //response = locations()             // 3
   //response = today()                 // 4
   //response = student_today()         // 5
   //response = user_check(scenario)    // 6
   //response = student_check(scenario) // 7
+  response = eligibility()
 
 
 
