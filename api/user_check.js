@@ -5,7 +5,7 @@ const data = new SharedArray('tokenx', function () {
     return JSON.parse(open('../file/token1.json'));
 });
 
-export function check_(scenario) {
+export function user_check(scenario) {
     const tokenx = data[scenario.iterationInTest].TOKEN;
 
     const url = `${domain2}/api/attendance/user/check`;

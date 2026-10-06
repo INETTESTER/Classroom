@@ -21,6 +21,7 @@ import { today } from '../api/today.js';
 import { student_today } from '../api/student_today.js';
 import { check_ } from '../api/check_.js';
 import { student_check } from '../api/student_check.js';
+import { user_check } from '../api/user_check.js';
 
 //============================================================================
 
@@ -45,7 +46,7 @@ export default function () {    //เรียกใช้ API ใน export def
   //response = locations()
   //response = today()
   //response = student_today()
-  //response = check_(scenario)
+  //response = user_check(scenario)
   //response = student_check(scenario)
 
 
