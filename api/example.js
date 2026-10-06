@@ -62,7 +62,7 @@ export function PostProfile_2() {  //POST กรณี id ไม่ซ้ำ (�
 
 import { SharedArray } from 'k6/data'; ///POST กรณี id ไม่ซ้ำ (ดึง id จากไฟล์ json)
 const data = new SharedArray('id', function () { ///POST กรณี id ไม่ซ้ำ (ดึง id จากไฟล์ json)
-    return JSON.parse(open('../file/data.json')).id; ///POST กรณี id ไม่ซ้ำ (ดึง id จากไฟล์ json)
+    return JSON.parse(open('../file/data1.json')).id; ///POST กรณี id ไม่ซ้ำ (ดึง id จากไฟล์ json)
 });
 export function PostProfile_3(scenario) {  ///POST กรณี id ไม่ซ้ำ (ดึง id จากไฟล์ json)
     const id = data[scenario.iterationInTest];

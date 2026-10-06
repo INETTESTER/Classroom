@@ -1,7 +1,12 @@
 import http from 'k6/http';
 import { domain } from './env.js';
+import { SharedArray } from 'k6/data'; ///POST กรณี id ไม่ซ้ำ (ดึง id จากไฟล์ json)
+const data = new SharedArray('id', function () { ///POST กรณี id ไม่ซ้ำ (ดึง id จากไฟล์ json)
+    return JSON.parse(open('../file/data1.json')).id; ///POST กรณี id ไม่ซ้ำ (ดึง id จากไฟล์ json)
+});
 
-export function auth_login() {
+export function auth_login(scenario) {
+    const id = data[scenario.iterationInTest];
     const account_id = __VU + '' + __ITER
     const schoolIds = [
         '1010720001',

@@ -18,7 +18,7 @@ import { classwork_grades } from '../api/classwork_grades.js';
 //============================================================================
 
 export default function () {    //เรียกใช้ API ใน export default function
-  // response = auth_login()                    // 1
+   response = auth_login(scenario)                    // 1
   // response = byInviteCode()                 // 2
   // response = classStudents()                 // 3 // เปลี่ยน cid ก่อนยิง
   // response = classwork_calStudent()         // 4
@@ -31,7 +31,7 @@ export default function () {    //เรียกใช้ API ใน export def
   // response = class_teacherClassPage()       // 11
   // response = classwork_grades()             // 12
 
-  
+
 
   error_check(response);
   sleep(1)
