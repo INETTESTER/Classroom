@@ -33,20 +33,20 @@ export default function () {    //เรียกใช้ API ใน export def
   // response = class_studentClassPage(scenario)       // 5
   // response = submissions(scenario)                  // 6
   // response = classwork_byClassId()           // 7
-   response = classwork_calTeacher(scenario)          // 8
+  //response = classwork_calTeacher(scenario)          // 8
   // response = class_dashboard_teacher(scenario)       // 9
   // response = class_dashboard_student(scenario)       // 10
   // response = class_teacherClassPage()       // 11
   // response = classwork_grades()             // 12
 
   // ============== clockin =======================
-  //response = me()
-  //response = time()
-  //response = locations()
-  //response = today()
-  //response = student_today()
-  //response = user_check(scenario)
-  //response = student_check(scenario)
+  response = me()                    // 1
+  //response = time()                  // 2
+  //response = locations()             // 3
+  //response = today()                 // 4
+  //response = student_today()         // 5
+  //response = user_check(scenario)    // 6
+  //response = student_check(scenario) // 7
 
 
 
