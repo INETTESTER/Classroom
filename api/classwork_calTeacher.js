@@ -28,7 +28,7 @@ export function classwork_calTeacher() {
 
     const response = http.post(url, payload, params);
 
-    console.log(response.body);
+    //console.log(response.body);
 
     return response;
 }
