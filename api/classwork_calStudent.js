@@ -1,7 +1,12 @@
 import http from 'k6/http';
 import { domain, token } from './env.js';
+import { SharedArray } from 'k6/data'; ///POST กรณี id ไม่ซ้ำ (ดึง id จากไฟล์ json)
+const data = new SharedArray('id', function () { ///POST กรณี id ไม่ซ้ำ (ดึง id จากไฟล์ json)
+    return JSON.parse(open('../file/data1.json')).id; ///POST กรณี id ไม่ซ้ำ (ดึง id จากไฟล์ json)
+});
 
-export function classwork_calStudent() {
+export function classwork_calStudent(scenario) {
+    const id = data[scenario.iterationInTest];
     const schoolIds = [
         '1010720001',
         '1010720002',
@@ -16,7 +21,7 @@ export function classwork_calStudent() {
 
     const payload = JSON.stringify({
         school_id: school_id,
-        person_id: '1469900472905'
+        person_id: id
     });
 
     const params = {

@@ -20,14 +20,14 @@ import { classwork_grades } from '../api/classwork_grades.js';
 export default function () {    //เรียกใช้ API ใน export default function
    response = auth_login(scenario)                    // 1
   // response = byInviteCode()                 // 2
-  // response = classStudents()                 // 3 // เปลี่ยน cid ก่อนยิง
-  // response = classwork_calStudent()         // 4
-  // response = class_studentClassPage()       // 5
+  // response = classStudents(scenario)                 // 3 // เปลี่ยน cid ก่อนยิง
+  // response = classwork_calStudent(scenario)         // 4
+  // response = class_studentClassPage(scenario)       // 5
   // response = submissions()                  // 6
   // response = classwork_byClassId()           // 7
-  // response = classwork_calTeacher()          // 8
-  // response = class_dashboard_teacher()       // 9
-  // response = class_dashboard_student()       // 10
+  // response = classwork_calTeacher(scenario)          // 8
+  // response = class_dashboard_teacher(scenario)       // 9
+  // response = class_dashboard_student(scenario)       // 10
   // response = class_teacherClassPage()       // 11
   // response = classwork_grades()             // 12
 
