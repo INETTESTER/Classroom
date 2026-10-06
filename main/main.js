@@ -14,22 +14,39 @@ import { class_dashboard_teacher } from '../api/class_dashboard_teacher.js';
 import { class_dashboard_student } from '../api/class_dashboard_student.js';
 import { class_teacherClassPage } from '../api/class_teacherClassPage.js';
 import { classwork_grades } from '../api/classwork_grades.js';
+import { me } from '../api/me.js';
+import { time } from '../api/time.js';
+import { locations } from '../api/locations.js';
+import { today } from '../api/today.js';
+import { student_today } from '../api/student_today.js';
+import { check_ } from '../api/check_.js';
+import { student_check } from '../api/student_check.js';
 
 //============================================================================
 
 export default function () {    //เรียกใช้ API ใน export default function
-   response = auth_login(scenario)                    // 1
+  // ============== classroom =======================
+  // response = auth_login(scenario)                    // 1
   // response = byInviteCode()                 // 2
   // response = classStudents(scenario)                 // 3 // เปลี่ยน cid ก่อนยิง
   // response = classwork_calStudent(scenario)         // 4
   // response = class_studentClassPage(scenario)       // 5
-  // response = submissions()                  // 6
+  // response = submissions(scenario)                  // 6
   // response = classwork_byClassId()           // 7
   // response = classwork_calTeacher(scenario)          // 8
   // response = class_dashboard_teacher(scenario)       // 9
   // response = class_dashboard_student(scenario)       // 10
   // response = class_teacherClassPage()       // 11
   // response = classwork_grades()             // 12
+
+  // ============== clockin =======================
+  //response = me()
+  //response = time()
+  //response = locations()
+  //response = today()
+  //response = student_today()
+  //response = check_(scenario)
+  //response = student_check(scenario)
 
 
 

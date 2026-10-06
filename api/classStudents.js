@@ -7,7 +7,6 @@ const data = new SharedArray('id', function () { ///POST กรณี id ไม�
 
 export function classStudents(scenario) {
     const id = data[scenario.iterationInTest];
-    const person_id = __VU + '' + __ITER
     const schoolIds = [
         '1010720001',
         '1010720002',
@@ -34,6 +33,9 @@ export function classStudents(scenario) {
     };
 
     const response = http.post(url, payload, params);
+    if (response.status == 400) {
+        console.log(id);
+    }
 
     //console.log(response.body);
 
