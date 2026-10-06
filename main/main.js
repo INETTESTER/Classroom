@@ -19,7 +19,6 @@ import { time } from '../api/time.js';
 import { locations } from '../api/locations.js';
 import { today } from '../api/today.js';
 import { student_today } from '../api/student_today.js';
-import { check_ } from '../api/check_.js';
 import { student_check } from '../api/student_check.js';
 import { user_check } from '../api/user_check.js';
 
@@ -34,7 +33,7 @@ export default function () {    //เรียกใช้ API ใน export def
   // response = class_studentClassPage(scenario)       // 5
   // response = submissions(scenario)                  // 6
   // response = classwork_byClassId()           // 7
-  // response = classwork_calTeacher(scenario)          // 8
+   response = classwork_calTeacher(scenario)          // 8
   // response = class_dashboard_teacher(scenario)       // 9
   // response = class_dashboard_student(scenario)       // 10
   // response = class_teacherClassPage()       // 11
