@@ -27,7 +27,7 @@ export function auth_login(scenario) {
         first_name: 'ทดสอบ',
         last_name: 'แซ่ตัง',
         birth_date: '1999-08-02',
-        person_id: '1411701316067',
+        person_id: id,
         account_type: 'learner-id'
     });
 
